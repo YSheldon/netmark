@@ -1,0 +1,3 @@
+#!/bin/bash
+/bin/iptflush
+rmmod xt_tds

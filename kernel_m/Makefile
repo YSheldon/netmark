@@ -1,0 +1,13 @@
+ifneq ($(KERNELRELEASE),)
+obj-m := xt_tds.o
+
+else
+KDIR := /lib/modules/$(shell uname -r)/build
+PWD := $(shell pwd)
+
+default:
+	$(MAKE) -C $(KDIR) SUBDIRS=$(PWD) modules
+
+clean:
+	rm -f *.o *~ core
+endif

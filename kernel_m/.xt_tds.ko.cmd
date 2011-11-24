@@ -1,0 +1,1 @@
+cmd_/home/he1ex/dip/kernel_m/xt_tds.ko := ld -r -m elf_i386 -T /usr/src/linux-2.6.32.11-calculate/scripts/module-common.lds --build-id -o /home/he1ex/dip/kernel_m/xt_tds.ko /home/he1ex/dip/kernel_m/xt_tds.o /home/he1ex/dip/kernel_m/xt_tds.mod.o
